@@ -13,7 +13,7 @@ export default function BookIssuers() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/listofbookissuers', { bookname });
+            const response = await axios.post('https://manage-book-backend.onrender.com/listofbookissuers', { bookname });
             setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
