@@ -7,7 +7,7 @@ export default function Fetchusers(){
     
     const Fetchuserdata = async() =>{
         try{
-            const response = await axios.get("http://localhost:8000/fetchusers");
+            const response = await axios.get("https://manage-book-backend.onrender.com/fetchusers");
             setUserdata(response.data.Data);
         }
         catch(error){
