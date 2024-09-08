@@ -34,7 +34,7 @@ export default function FilterBooks() {
     const handleFilter = async (e) => {
         e.preventDefault();
         try {
-            let url = `https://manage-book-backend.onrender.com`;
+            let url = `https://manage-book-backend.onrender.com/`;
             let endpoint = '';
 
             if (filterType === 'name' && filterCriteria.bookname) {
