@@ -9,7 +9,7 @@ export default function Bookslist() {
     useEffect(() => {
             const Fetchbooksdata = async() =>{
                 try{
-                    const response = await axios.get("http://localhost:8000/fetchbooks");
+                    const response = await axios.get("https://manage-book-backend.onrender.com/fetchbooks");
                     setBooksdata(response.data.Data);
                 }
                 catch(error){
