@@ -21,7 +21,7 @@ export default function Adduserform(){
         
         try{
 
-            const response = await axios.post('http://localhost:8000/adduser',userdata);
+            const response = await axios.post('https://manage-book-backend.onrender.com/adduser',userdata);
             
             if(response.status===200){
                 alert(response.data.message);
