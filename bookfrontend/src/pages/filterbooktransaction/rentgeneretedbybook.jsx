@@ -14,7 +14,7 @@ export default function RentGeneratedByBook() {
         e.preventDefault();
   
         try {
-            const response = await axios.post('http://localhost:8000/rentgeneratedbybook', { bookname });
+            const response = await axios.post('https://manage-book-backend.onrender.com/rentgeneratedbybook', { bookname });
             setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
