@@ -52,6 +52,8 @@ export default function BookTransections() {
                 });
             }
         } catch (error) {
+            if(formType === 'issuebook'){alert('Book is already issued')}
+            if(formType === 'returnbook'){alert('book is already returned')}
             console.log('Error ', error);
         }
     };
