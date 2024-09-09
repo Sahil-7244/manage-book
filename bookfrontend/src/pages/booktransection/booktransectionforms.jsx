@@ -61,7 +61,7 @@ export default function BookTransections() {
     
     return (
         <Container className="mt-4">
-            <h1>Books Transaction</h1>
+            <h1>Books Transactionn</h1>
 
             {/* Step 1: Select Form Type */}
             <Form.Group className="mb-3">
